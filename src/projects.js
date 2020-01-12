@@ -1,8 +1,9 @@
-/* eslint-disable space-before-function-paren */
+import loadNavBar from './nav/nav';
+
+/* eslint-disable no-unused-expressions */
 import(/* webpackChunkName: "bootstrap" */ 'bootstrap');
 import(/* webpackChunkName: "bootstrap-style" */'./scss/index.scss');
-
-import loadNavBar from './nav/nav';
+/* eslint-enable */
 
 loadNavBar();
 
