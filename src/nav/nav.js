@@ -1,6 +1,6 @@
 export default function load() {
   const request = new XMLHttpRequest();
-  request.open('GET', '/nav/nav.html', true);
+  request.open('GET', './nav/nav.html', true);
 
   request.onload = function addNavBar() {
     if (this.status >= 200 && this.status < 400) {
