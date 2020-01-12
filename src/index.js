@@ -1,5 +1,5 @@
-import 'bootstrap';
-import './scss/index.scss';
+import(/* webpackChunkName: "bootstrap" */ 'bootstrap');
+import(/* webpackChunkName: "bootstrap-style" */'./scss/index.scss');
 
 import loadNavBar from './nav/nav';
 

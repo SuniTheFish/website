@@ -6,7 +6,8 @@ module.exports = {
     projects: './src/projects.js',
   },
   output: {
-    filename: '[name]/bundle.js',
+    filename: 'src/[name].js',
+    chunkFilename: 'src/[name]-chunk.js',
     path: path.join(__dirname, 'dist'),
   },
   module: {
