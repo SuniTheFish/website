@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import loadNavBar from './nav/nav';
 
 /* eslint-disable no-unused-expressions */
@@ -7,4 +8,4 @@ import(/* webpackChunkName: "bootstrap-style" */'./scss/index.scss');
 
 loadNavBar();
 
-document.querySelector('#location').textContent = window.location.host;
+$('#location').text(window.location.host);

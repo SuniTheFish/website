@@ -7,7 +7,6 @@ module.exports = {
   },
   output: {
     filename: 'src/[name].js',
-    chunkFilename: 'src/[name]-chunk.js',
     path: path.join(__dirname, 'dist'),
   },
   module: {
@@ -38,6 +37,7 @@ module.exports = {
   },
   // optimization: {
   //   splitChunks: {
+  //     // include all types of chunks
   //     chunks: 'all',
   //   },
   // },
