@@ -9,6 +9,7 @@ import(/* webpackChunkName: "bootstrap-style" */'./scss/index.scss');
 loadNavBar();
 
 $.getJSON('https://api.github.com/users/SuniTheFish/repos', (repos) => {
+
   const projects = $('#git-projects');
   repos.forEach((repo) => {
     projects.append(`
