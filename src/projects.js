@@ -22,3 +22,10 @@ $.getJSON('https://api.github.com/users/SuniTheFish/repos', (repos) => {
     `);
   });
 });
+
+$('#search-gits').on('keyup', (eve) => {
+  const search = $(eve.target).val().toLowerCase();
+  $('#git-projects .card-title').toArray().forEach((ele) => {
+    $(ele).parent().parent().toggle($(ele).text().toLowerCase().indexOf(search) > -1);
+  });
+});
