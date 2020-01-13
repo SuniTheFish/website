@@ -1,15 +1,22 @@
-import $ from 'jquery';
-
 export default function load() {
-  $.get('nav.html', (data) => {
-    // console.log('fish');
-    // add navbar to DOM
-    $('#nav-placeholder').replaceWith(data);
-    // add page highlight and sr info
-    $('.nav-link')
-      .filter((_, element) => element.href === window.location.href)
-      .append('<span class="sr-only">(current)</span>')
-      .parent()
-      .addClass('active');
-  });
+  const request = new XMLHttpRequest();
+  request.open('GET', 'nav.html');
+  request.onload = function addNavBar() {
+    if (this.status >= 200 && this.status < 400) {
+      document.querySelector('#nav-placeholder')
+        .replaceWith(
+          document.createRange().createContextualFragment(this.response),
+        );
+      const links = [...document.querySelectorAll('.nav-link')]
+        .filter((ele) => ele.href === window.location.href);
+      const sr = document.createElement('span');
+      sr.className = 'sr-only';
+      sr.textContent = '(current)';
+      links.forEach((link) => {
+        link.appendChild(sr);
+        link.classList.add('active');
+      });
+    }
+  };
+  request.send();
 }
