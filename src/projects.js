@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import 'core-js/stable';
 import loadNavBar from './nav/nav';
 
 /* eslint-disable no-unused-expressions */
