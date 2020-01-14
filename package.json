@@ -1,6 +1,6 @@
 {
   "name": "boatstrap",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "new bootstrap & webpack website for me",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "start": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["benjaminhinchliff.com", "http://benjaminhinchliff.com", "benhinchliff.com", "http://benhinchliff.com"],
+  "author": "benjamin.hinchliff@gmail.com",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.8.0",
