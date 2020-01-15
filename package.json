@@ -8,13 +8,18 @@
     "start": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["benjaminhinchliff.com", "http://benjaminhinchliff.com", "benhinchliff.com", "http://benhinchliff.com"],
+  "keywords": [
+    "benjaminhinchliff.com",
+    "http://benjaminhinchliff.com",
+    "benhinchliff.com",
+    "http://benhinchliff.com"
+  ],
   "author": "benjamin.hinchliff@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.8.0",
-    "@babel/preset-env": "^7.8.0",
-    "autoprefixer": "^9.7.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
@@ -22,16 +27,17 @@
     "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
     "precss": "^4.0.0",
-    "sass-loader": "^8.0.1",
+    "sass-loader": "^8.0.2",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "assembling-orange-sphere": "^1.0.5",
     "babel-eslint": "^10.0.3",
     "bootstrap": "^4.4.1",
-    "core-js": "^3.6.3",
+    "core-js": "^3.6.4",
     "eslint-plugin-import": "^2.20.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
