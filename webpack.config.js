@@ -4,7 +4,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     projects: './src/projects.js',
-    contact: './src/contact.js',
+    basic: './src/basic.js',
   },
   output: {
     filename: 'src/[name].js',
