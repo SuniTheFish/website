@@ -106,4 +106,4 @@ typings/
 .vscode/
 
 # Password files
-dist/keys.txt
+keys.txt
