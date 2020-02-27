@@ -104,3 +104,6 @@ typings/
 
 # VSCode Files
 .vscode/
+
+# Password files
+dist/keys.txt
