@@ -3,10 +3,8 @@ export default function load() {
   request.open('GET', 'nav.html');
   request.onload = function addNavBar() {
     if (this.status >= 200 && this.status < 400) {
-      document.querySelector('#nav-placeholder')
-        .replaceWith(
-          document.createRange().createContextualFragment(this.response),
-        );
+      const toReplace = document.querySelector('#nav-placeholder');
+      toReplace.parentNode.replaceChild(document.createRange().createContextualFragment(this.response), toReplace);
       const links = [...document.querySelectorAll('.nav-link')]
         .filter((ele) => ele.href === window.location.href);
       const sr = document.createElement('span');
