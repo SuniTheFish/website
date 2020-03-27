@@ -15,7 +15,7 @@ request.onload = function loadGits() {
     repos.forEach((repo) => {
       const card = document.createRange().createContextualFragment(`
         <div class="card">
-          <a href="${repo.html_url}" target="_blank">
+          <a href="${repo.homepage || repo.html_url}" target="_blank">
             <h4 class="card-title my-0">${repo.name}</h4>
           </a>
           <p class="card-text">${repo.description || '(no description)'}</p>
