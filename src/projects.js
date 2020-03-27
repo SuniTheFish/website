@@ -19,7 +19,7 @@ request.onload = function loadGits() {
             <h4 class="card-title my-0">${repo.name}</h4>
           </a>
           ${repo.homepage ? `<a href="${repo.html_url}">
-            <h4 class="card-title my-0">(repo)</h4>
+            <h6 class="card-title my-0">(repo)</h4>
           </a>` : ''}
           <p class="card-text">${repo.description || '(no description)'}</p>
         </div>
